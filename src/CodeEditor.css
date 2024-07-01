@@ -1,0 +1,49 @@
+/* src/CodeEditor.css */
+h1{
+    text-align: center;
+}
+.code-editor {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 300px;
+  }
+  
+  .code-input,
+  .code-highlight {
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    white-space: pre;
+    overflow: auto;
+  }
+  
+  .code-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: transparent;
+    caret-color: black;
+    z-index: 1;
+    resize: none;
+    overflow: hidden;
+  }
+  
+  .code-highlight {
+    z-index: 0;
+    pointer-events: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: black;
+  }
+  
